@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPAM Task</title>
+  <link rel="stylesheet" href="term.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="term/codemirror.js"></script>
+  <link rel="stylesheet" href="term/monokai.css">
+  <link rel="stylesheet" href="term/codemirror.css">
+  <script src="term/mode/python.js"></script>
+</head>
+<body>
+  <div class="container">
+      <button onclick="sendCode();" class="btn btn-success">Run</button>
+  </div>
+  <p></p>
+  <div class="container cm-s-monokai">
+      <div class="left_editor">
+        <textarea id="left_terminal"></textarea>
+      </div>
+      <div class="right_editor">
+        <textarea id="right_terminal"></textarea>
+      </div>
+  </div>
+  <script src="websockets_client.js"></script>
+</body>
+</html>
