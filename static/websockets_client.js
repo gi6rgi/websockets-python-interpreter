@@ -4,7 +4,6 @@ var left_editor = CodeMirror.fromTextArea(document.getElementById("left_terminal
 });
 
 var right_editor = CodeMirror.fromTextArea(document.getElementById("right_terminal"), {
-  lineNumbers: true,
   readOnly: true,
   cursorBlinkRate: 0,
 });
@@ -28,7 +27,8 @@ ws.onclose = function(event) {
   if (event.wasClean) {
     right_editor.setValue('The connection was closed.');
   } else {
-    right_editor.setValue('Сonnection drop-out was detected.'); // например, "убит" процесс сервера
+    // If websockets_server.py killed.
+    right_editor.setValue('Сonnection drop-out was detected.');
   }
   right_editor.setValue('Code: ' + event.code + ' reason: ' + event.reason);
 };
