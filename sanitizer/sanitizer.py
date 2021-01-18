@@ -4,6 +4,7 @@ import builtins
 def not_allowed(*args, **kwargs):
     print('Method is not allowed.')
 
+
 builtins.open  = not_allowed
 builtins.exec  = not_allowed
 builtins.eval  = not_allowed
