@@ -9,5 +9,5 @@
 - ~~migrate from Xterm.js to CodeMirror~~
 - ~~set process timeout (asyncio don't have an equivalent to the 'timeout' param in subprocess, use wait_for())~~
 - ~~Nginx + WebSocket~~
-- Docker
+- ~~Docker~~
 - Pass the uni exams
