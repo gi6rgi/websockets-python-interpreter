@@ -1,5 +1,6 @@
 var left_editor = CodeMirror.fromTextArea(document.getElementById("left_terminal"), {
   lineNumbers: true,
+  indentUnit: 4
 });
 
 var right_editor = CodeMirror.fromTextArea(document.getElementById("right_terminal"), {
