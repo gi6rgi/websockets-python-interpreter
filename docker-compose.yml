@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  websockets_server:
+    build: ./websockets_server
+    command: python websockets_server.py
+    ports:
+      - 3000:3000
+
+  nginx:
+    build: ./static
+    ports:
+      - 3030:80
