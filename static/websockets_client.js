@@ -4,11 +4,11 @@ var left_editor = CodeMirror.fromTextArea(document.getElementById("left_terminal
 });
 
 var right_editor = CodeMirror.fromTextArea(document.getElementById("right_terminal"), {
-  readOnly: true,
+  readOnly: 'nocursor',
   cursorBlinkRate: 0,
 });
 
-const ws = new WebSocket("ws://localhost:3000");
+const ws = new WebSocket("ws://localhost:3000/ws/");
 // Some inkostilation happens here.
 curr_line = '';
 
