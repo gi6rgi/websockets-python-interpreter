@@ -9,7 +9,7 @@
 <img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/timeouterr.gif" width=600px>
 
 
-- Запрещены импорты некоторых библиотек и использование методов open, exec и eval
+- Запрещены импорты некоторых библиотек и использование функций open, exec и eval
 <img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/cheetoslock.jpg" width=600px>
 
 ### На всякий случай для удобства:
