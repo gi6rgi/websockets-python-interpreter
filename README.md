@@ -1,15 +1,16 @@
-## http://176.118.165.85/
+## http://176.118.165.85/ 
+### Features
+- stdout/stderr отображается в правом окне
+- Таймаут задаётся в файле config.py. На примере его значение равно 5:
+*на сервере таймаут равен 30 секундам
+<img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/timeouterr.gif" width=600px>
 
-### TODO:
 
-- ~~websockets client~~
-- ~~websockets server~~
-- ~~issue with blocking ws if other user runs blocking code~~
-- ~~migrate from subprocess to asyncio.subrocess~~
-- ~~realtime stdout~~ (Python process has it's own buffer)
-- ~~user input sanitizer~~
-- ~~migrate from Xterm.js to CodeMirror~~
-- ~~set process timeout (asyncio don't have an equivalent to the 'timeout' param in subprocess, use wait_for())~~
-- ~~Nginx + WebSocket~~
-- ~~Docker~~
-- Pass the uni exams
+- Запрещены импорты некоторых библиотек и переопледены методы open, exec и eval
+<img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/cheetoslock.jpg" width=600px>
+
+### На всякий случай для удобства:
+- git clone https://github.com/ge6rgii/websockets-python-interpreter && cd websockets-python-interpreter
+- docker-compose up
+
+сервис будет доступен по localhost:3030
