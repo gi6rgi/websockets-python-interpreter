@@ -2,7 +2,7 @@ import builtins
 
 
 def not_allowed(*args, **kwargs):
-    print('Method is not allowed.')
+    print('This function is not allowed.')
 
 
 builtins.open  = not_allowed
