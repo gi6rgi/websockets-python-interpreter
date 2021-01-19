@@ -1,3 +1,5 @@
+## http://176.118.165.85/
+
 ### TODO:
 
 - ~~websockets client~~
@@ -7,7 +9,7 @@
 - ~~realtime stdout~~ (Python process has it's own buffer)
 - ~~user input sanitizer~~
 - ~~migrate from Xterm.js to CodeMirror~~
-- set process timeout (asyncio don't have an equivalent to the 'timeout' param in subprocess, use wait_for())
-- Nginx + WebSocket
-- Docker
+- ~~set process timeout (asyncio don't have an equivalent to the 'timeout' param in subprocess, use wait_for())~~
+- ~~Nginx + WebSocket~~
+- ~~Docker~~
 - Pass the uni exams
