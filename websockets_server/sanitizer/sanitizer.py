@@ -1,14 +1,10 @@
 import builtins
 
 
-def not_allowed(*args, **kwargs):
-    print('This function is not allowed.')
-
-
-builtins.open  = not_allowed
-builtins.exec  = not_allowed
-builtins.eval  = not_allowed
-builtins.input = not_allowed
+builtins.open  = lambda *args, *kwargs: print('Built-in function "open" is not allowed.')
+builtins.exec  = lambda *args, *kwargs: print('Built-in function "exec" is not allowed.')
+builtins.eval  = lambda *args, *kwargs: print('Built-in function "exal" is not allowed.')
+builtins.input = lambda *args, *kwargs: print('Built-in function "input" is not allowed.')
 
 new_import = builtins.__import__
 
