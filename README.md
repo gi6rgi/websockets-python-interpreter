@@ -12,9 +12,6 @@
 - Запрещены импорты некоторых библиотек и использование функций open, exec и eval
 <img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/cheetoslock.jpg" width=600px>
 
-### Трудности
-- Чтение stout/err в режиме реального времени (как потом оказалось, мешала буферизация, которую было не отключить при запуске процесса через subprocess), на помощь пришел флаг '-u' при запуске интерпретатора.
-- Всё остальное быстро гуглилось :)
 
 ### На всякий случай для удобства:
 - git clone https://github.com/ge6rgii/websockets-python-interpreter && cd websockets-python-interpreter
