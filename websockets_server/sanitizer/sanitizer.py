@@ -3,7 +3,7 @@ import builtins
 
 builtins.open  = lambda *args, *kwargs: print('Built-in function "open" is not allowed.')
 builtins.exec  = lambda *args, *kwargs: print('Built-in function "exec" is not allowed.')
-builtins.eval  = lambda *args, *kwargs: print('Built-in function "exal" is not allowed.')
+builtins.eval  = lambda *args, *kwargs: print('Built-in function "eval" is not allowed.')
 builtins.input = lambda *args, *kwargs: print('Built-in function "input" is not allowed.')
 
 new_import = builtins.__import__
