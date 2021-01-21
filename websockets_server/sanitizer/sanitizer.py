@@ -10,7 +10,7 @@ new_import = builtins.__import__
 
 
 def safe_import(module_name, *args, **kwargs):
-    restricted_modules = ['os', 'subprocess', 'sys']
+    restricted_modules = ['socket', 'os', 'subprocess', 'sys']
     if module_name in restricted_modules:
         print(f'{module_name} is not allowed here.')
     else:
