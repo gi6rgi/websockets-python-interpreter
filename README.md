@@ -1,19 +1,18 @@
 ### Online Python interpreter
-- Между клиентом и сервером устанавливается вебсокет соединение, благодаря чему есть возможность получать stdout/stderr запущенного процесса в режиме реального времени (отображается в правом окне)
-- Таймаут задаётся в файле конфигурации. На примере ниже его значение равно 5
+ - A WebSocket connection is established between the client and the server, which makes it possible to receive stdout / stderr of the running process in real time (displayed in the right window)
+ - The timeout is set in the configuration file. In the example below, its value is 5
 
-*на сервере таймаут равен 30 секундам
 
 
 <img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/timeouterr.gif" width=600px>
 
 
-- Запрещены импорты некоторых библиотек и использование функций open, exec и eval
+- Imports of some libraries and the use of the open, exec and eval functions are prohibited 
 <img src="https://github.com/ge6rgii/websockets-python-interpreter/blob/main/examples/cheetoslock.jpg" width=600px>
 
 
-### На всякий случай для удобства:
+### How to run locally:
 - git clone https://github.com/ge6rgii/websockets-python-interpreter && cd websockets-python-interpreter
 - docker-compose up
 
-сервис будет доступен на localhost:3030
+The service will be available at localhost:3030
